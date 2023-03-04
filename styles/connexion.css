@@ -1,0 +1,243 @@
+@font-face{font-family: 'Montserrat'; src: url(../Montserrat/Montserrat-Regular.ttf);}
+@font-face {font-family: 'Montserrat-italic'; src: url(../Montserrat/Montserrat-Italic.ttf);}
+@font-face {font-family: 'Montserrat-bold'; src: url(../Montserrat/Montserrat-Bold.ttf);}
+@font-face {font-family: 'Montserrat-bold-italic'; src: url(../Montserrat/Montserrat-BoldItalic.ttf);}
+
+
+.couleur {
+    color: #374B73;
+    color: #FF9A9A;
+    color: #FFF1ED;
+    color: #FFFFFF;
+
+    color: #005F40;
+    color: #90512C;
+    color: #B09A70;
+    color: #EDEDED;
+    color: #03D069;
+    color: #FFFFFF;
+
+    color: #ae6f52;
+    color: #5291ae;
+    color: #005F40;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    display: flex;
+}
+
+.leftBox {
+    width: 50vw;     /*Pour faire la moitié*/
+    height: 100vh;     /*A revoir !!!*/
+    background-color: #F5F5F5;     /*Couleur de la moitié de gauche*/
+    float: left;     /*Mettre d'un côté le titre et de l'autre le login et le texte*/
+    display: flex;
+    justify-content: center;     /*Centre les éléments sur l'axe x*/
+    align-items: center;     /*Centre les éléments sur l'axe y*/
+    flex-direction: column;
+}
+
+.title {
+    font-style: italic;
+    font-weight: 1000;
+    font-size: 8vw;
+    color: #5291ae;     /*Couleur du titre*/
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 2vw;
+    color: #ae6f52;     /*Couleur du sous-titre*/
+}
+
+
+
+.rightBox {
+    width: 50vw;
+    height: 100vh;
+    background-color: #5291ae;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.presentationBox {     /*Rajouter la font-family*/
+    width: 36vw;
+    padding-bottom: 10px;
+}
+
+.welcome {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3vw;
+    /*background-color: #03D069;*/
+    padding-bottom: 1vh;
+}
+
+.text {
+    font-size: 2vh;
+    /*background-color: yellow;*/
+    padding: 1vh 0;
+    text-align: justify;
+}
+
+
+.loginBox {
+    /*padding: 10px 0;*/
+    width: 36vw;
+    height: 4vh; 
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+}
+
+.password {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 4vh;
+}
+
+.password input[type=password] {
+    padding-left: 1vw;
+    font-weight: 800;
+    font-size: 100%;
+    border: 0px solid #000000;
+    background-color: #F5F5F5;
+    width: 27vw;
+    height: 100%;
+    outline: none;
+    text-align: left;
+}
+
+.password input[type=text] {
+    padding-left: 1vw;
+    font-weight: 800;
+    font-size: 100%;
+    border: 2px solid #000000;
+    background-color: #F5F5F5;
+    width: 27vw;
+    height: 4vh;
+    outline: none;
+    text-align: left;
+}
+
+.password i {
+    position: absolute;
+    color: #000000; 
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.loginBox i.active::before {
+    content: '\f070';
+}
+
+.loginBox button {
+    font-weight: 800;
+    font-size: 100%;
+    height: 4vh;
+    border: 0px solid #000000;
+    width: 7vw;
+    height: 100%;
+    outline: none;
+    background-color: #F5F5F5;
+}
+
+.loginBox button:hover {
+    cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+    .loginBox button {
+        font-size: 60%;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 900px) {     /*A moins de 800px la div change de couleur*/
+    body {
+        flex-direction: column;
+    }
+    
+    .leftBox {     /*EN HAUT*/
+        width: 100vw;
+        height: 30vh;     /*Pour faire la moitié*/
+        float: none; /*!!!!!!!!!!!!!!!!!!!*/
+        display: flex;
+    }
+    
+    .title {
+        font-size: 16.5vw; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    }
+    
+    .subtitle {
+        font-weight: 400; /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        font-size: 5vw; /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    }
+    
+    
+    
+    .rightBox {     /*EN BAS*/
+        width: 100vw;
+        height: 70vh;     /*Pour faire la moitié*/ /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        float: none; /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    }
+    
+    .presentationBox {
+        width: 75vw; /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        padding-bottom: 10px;
+    }
+    
+    .welcome {
+        font-size: 5vw; /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        /*background-color: #03D069;*/
+        padding-bottom: 1vh;
+    }
+    
+    .text {
+        font-size: 3vw; /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        /*background-color: yellow;*/
+        padding: 1vh 0;
+        
+    }
+    
+    
+    
+    .loginBox {
+        padding: 10px 0;
+        width: 75vw; /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    
+    }
+    
+    .loginBox input {
+        border: 2px solid #000000;
+        outline: none;
+    }
+    
+    .loginBox i {
+        color: #000000;
+        position: relative;
+    }
+    
+    .loginBox i.active::before {
+        content: '\f070';
+    }
+    
+    .loginBox button {
+        border: 2px solid #000000;
+        /*width: 8vw;
+        height: 6vh;
+        font-size: 3vh;*/
+        outline: none;
+        background-color: #F5F5F5;
+    }
+}

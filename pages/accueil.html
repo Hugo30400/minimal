@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/css/all.css" />
+    <link rel="stylesheet" href="../styles/accueil.css">
+    <link rel="shortcut icon" href="../images/TaigaLogo.png" type="image/x-icon">
+    <script src="../scripts/accueil.js"></script>
+    <title>Accueil</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="accueil.html" class="logo">MINIMAL</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Infos</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+        <img src="../images/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <header></header>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptates cumque itaque eligendi nisi tempore excepturi suscipit ut libero soluta laborum possimus dolores quaerat, numquam aperiam quo nihil expedita tenetur.
+    Porro corporis repellat quaerat officiis voluptas in reprehenderit facilis nesciunt. Ullam nihil incidunt saepe similique quod eligendi itaque qui, dolore cum exercitationem nostrum. Nesciunt error reiciendis dolores enim eligendi aperiam?
+    Velit sequi, itaque quia ipsum suscipit ut deleniti eius, quo voluptatibus voluptas tempora cum ullam fugit qui corrupti inventore iste molestias atque nobis officiis. Ut, enim ea. Quidem, laboriosam sint.
+    Eum dolorum nemo voluptatem libero, perferendis eos quasi recusandae fugiat molestias ipsa totam nam perspiciatis tempore laborum optio obcaecati deserunt. Explicabo at quae voluptas magnam. Minus, blanditiis illum. Vero, consequatur.
+    Ut, a veritatis! Ex quia assumenda voluptatem tempore corrupti saepe, debitis facilis facere illo, suscipit alias, eius aliquid rerum reprehenderit fugiat non voluptatum quae quasi omnis voluptatibus repudiandae quidem! Fugiat.
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+    const body = document.querySelector("body")
+
+    menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu');
+            body.classList.toggle("anti-scroll");
+        }
+    )
+</script>
+
+</html>
