@@ -53,14 +53,13 @@ header {
 }
 
 .navbar a {
-    color: #FFFFFF;
+    color: #F5F5F5;
     font-size: 1.25em;
 }
 
 .navbar .logo {
     font-size: 2.5em;
     font-weight: bold;
-    /*color: #5291ae;*/
 }
 
 .navbar .nav-links ul {
@@ -95,7 +94,7 @@ header {
 
     .navbar .logo {
         position: absolute;
-        top: 50px;
+        top: 40.4px;
         left: 50px;
     }
 
@@ -131,5 +130,6 @@ header {
     .navbar .nav-links ul li {
         margin: 25px 0 ;     /*Espace entre les liens*/
         font-size: 1.2em;     /*Taille des liens*/
+        font-weight: 600;
     }
 }
