@@ -28,6 +28,7 @@ body::-webkit-scrollbar {display: none;}     /*Taille de la scroollbar*/
 
 body {
     font-family: 'Montserrat';
+    background-color: #000000;
 }
 
 .anti-scroll {     /*Quand le menu hamburger est cliqué, on peut plus scroller*/
