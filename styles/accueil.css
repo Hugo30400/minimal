@@ -87,6 +87,11 @@ header {
     margin-left: 0;
 }
 
+.premierCarre {
+    width: 100vw;
+    background-color: #F5F5F5;
+}
+
 @media screen and (max-width: 900px) {     /*Peut être changer en fonction de la longueur des li !! */
     .navbar {
         padding: 0;
